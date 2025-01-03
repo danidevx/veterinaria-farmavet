@@ -1,0 +1,267 @@
+body {
+    margin: 0;
+    
+    font-family: Georgia, serif;
+}
+
+.borde {
+
+    padding: 0px 150px;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#009933;
+    color: white;
+    padding: 70px 20px;
+    font-weight: bold;
+
+}
+
+
+
+.logo-container img {
+    height: 200px;
+}
+
+nav  {
+    background-color:#087d2f;
+    padding: 1px ;
+    
+}
+
+nav ul {
+    
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-info {
+    text-align: right;
+     padding: 0px 0px 10px 0px;
+}
+
+.contact-info p {
+    margin: 0;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.hero {
+    background-color: #f8f9fa;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/*.hero-content h1 {
+    font-size: 3em;
+    color: #4CAF50;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    color: #333;
+}*/
+
+.hero-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+.recommended, .new-arrivals {
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.recommended h2, .new-arrivals h2 {
+    text-align: center;
+    color: black;
+    padding: 50px;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-item {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    height: 300px; /* Altura fija */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Espacio entre los elementos */
+}
+
+
+
+.product-item img {
+    width: 100%;
+    max-height: 150px; /* Altura máxima */
+    object-fit: contain; /* Ajusta sin distorsionar */
+}
+
+.product-item h3 {
+    color: black;
+}
+
+.product-item a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #eeeeee;
+    color: #333333;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.product-item p {
+    margin-top: auto; /* Empuja el precio hacia abajo */
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+.product-item a:hover {
+    background-color: #a3a2a2;
+}
+
+
+
+
+
+
+
+footer {
+    background-color: #009933;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    padding: 0px 10px 10px 30px;
+}
+
+.footer-section h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    max-width: 200px;
+    padding: 20px;
+
+}
+
+.social-media a {
+    margin-right: 10px;
+}
+
+.flag {
+    max-width: 150px;
+}
+
+.footer-note {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.margen {
+    padding: 32px;
+
+}
+
+
+@media (max-width: 750px) {
+    
+     .borde {
+        padding-left :10px ;
+        padding-right :10px ;
+     }
+    
+     header {
+        flex-direction : column ; /* Cambia la dirección del flex a columna */
+        align-items : flex-start ; /* Alinea los elementos al inicio */
+        padding :30px ; /* Reduce el padding */
+     }
+
+     nav ul {
+        flex-direction : column ; /* Cambia la dirección del menú a columna */
+        gap :10px ; /* Reduce el espacio entre los elementos */
+     }
+
+     nav ul li {
+        text-align : center ; /* Centra los enlaces del menú */
+     }
+
+     .contact-info {
+        text-align : center ; /* Centra la información de contacto */
+        padding :10px ; /* Ajusta el padding */
+     }
+
+     .product-list {
+        flex-direction : column ; /* Cambia la dirección de la lista de productos a columna */
+        align-items : center ; /* Centra los productos */
+     }
+
+     .product-item {
+        width :90% ; /* Aumenta el ancho de los productos en móviles */
+        margin-bottom :20px ; /* Agrega margen inferior entre productos */
+     }
+
+     footer .footer-container {
+        flex-direction : column ; /* Cambia la dirección del footer a columna */
+        align-items : center ; /* Centra los elementos del footer */
+     }
+}
