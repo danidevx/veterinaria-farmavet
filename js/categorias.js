@@ -18,9 +18,18 @@ const category = [
 
 	
 
-	{ name: 'Analgésicos', img: 'img/categorias/Analgesicos.jpg' },
-	{ name: 'Antiinflamatorios', img: 'img/categorias/Antiinflamatorios.jpg' },
-	{ name: 'Antiinflamatorios', img: 'img/categorias/Antipireticos.jpg' },
+	{  img: 'img/categorias/Analgesicos.png' },
+	{  img: 'img/categorias/Antiinflamatorios.png' },
+	{  img: 'img/categorias/Antipireticos.png' },
+	{  img: 'img/categorias/Anestesicos.jpg' },
+    {  img: 'img/categorias/Antianemicos.png' },
+    {  img: 'img/categorias/Antibioticos.jpg' },
+    {  img: 'img/categorias/Antidiarreicos.png' },
+    {  img: 'img/categorias/Antihistaminicos.png' },
+    {  img: 'img/categorias/Antiparasitarios.png' },
+    {  img: 'img/categorias/Biologicos.png' },
+    {  img: 'img/categorias/Hormonales.png' },
+    {  img: 'img/categorias/Multivitaminicos.png' }
 
 
 // 1. Analgésicos/Antiinflamatorios/Antipiréticos.
