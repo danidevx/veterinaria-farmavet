@@ -1,6 +1,6 @@
 function Categorias (name, img) {
 	const Categoria = document.createElement('div')
-	Categoria.className = 'product-item';
+	Categoria.className = 'product-itemm';
 
 	Categoria.innerHTML = `
 

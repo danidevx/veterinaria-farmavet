@@ -5,35 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Farvavet grandes</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/modal.css">
 </head>
 <body>
 
-    <header>
-        <div class="borde" >
+    <header id="header">
+        <div  class="borde" >
             <div class="logo-container">
                 <img src="img/logo.png" alt="Medivet Logo">
             </div>
             <div class="contact-info">
+
                 <p>Comunícate con nosotros vía WhatsApp</p>
                 <a href="https://wa.me/04120588764" target="_blank">(0412) 0588764</a>
                 <a href="https://wa.me/04120588764" target="_blank">(0412) 0588764</a>
+                <a href="/carrito" class="cart-button" id="carrito">
+                    <img src="img/carrito.png" alt="Carrito" class="cart-icon">
+                </a>
+                <!-- Modal -->
+                
+                    <div id="cartModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h2 >Productos en tu carrito</h2>
+                            <ul id="productList">
+                                <!-- Aquí se agregarán los productos dinámicamente -->
+                            </ul>
+
+                            <button id="whatsappButton">Enviar por WhatsApp</button>
+                        </div>
+                    </div>
+
+
             </div>
-            <nav>
-                <ul>
+           <nav>
+                <div class="hamburger" id="hamburger">
+                    &#9776; <!-- Icono de hamburguesa -->
+                </div>
+                <ul id="navList">
                     <li><a href="#">Tienda</a></li>
                     <li><a href="#">Preguntas Frecuentes</a></li>
                     <li><a href="#">Noticias Veterinarias</a></li>
                     <li><a href="#">La Empresa</a></li>
                     <li><a href="#">Contacto</a></li>
                     <li>
-                        <form role="search" method="get" action="/search">
-                        <input type="search" name="search-text" placeholder="Buscar..." aria-label="Buscar">
-                        <button type="submit">Buscar</button>
+                        <form role="search" method="get" action="/search" id="buscar">
+                            <input type="search" name="search-text" placeholder="Buscar..." aria-label="Buscar">
+                            <button type="submit">Buscar</button>
                         </form>
                     </li>
                 </ul>
-    
             </nav>
+
 
         
         </div>
@@ -75,7 +98,8 @@
 <script src="js/product.js"></script> <!-- Incluir el archivo común -->
 <script src="js/productrecomendamos.js"></script>
 <script src="js/productnovedades.js"></script>
-<script src="js/Categorias.js"></script>
+<script src="js/categorias.js"></script>
+<script src="js/menunav.js"></script>
 
     <footer>
         <div class="footer-container">
@@ -130,6 +154,19 @@
     </footer>
 
     </div>
+    <!-- Modal de Resultados de Búsqueda -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <span class="close-search">&times;</span>
+        <h2>Resultados de Búsqueda</h2>
+        <ul id="searchResultsList">
+            <!-- Aquí se agregarán los productos encontrados dinámicamente -->
+        </ul>
+    </div>
+</div>
+
+    <script src="js/modalcarrito.js"></script>
+    <script src="js/buscar-producto.js"></script>
 
 
 </body>

@@ -19,6 +19,7 @@ header {
     padding: 70px 20px;
     font-weight: bold;
 
+
 }
 
 
@@ -27,14 +28,13 @@ header {
     height: 200px;
 }
 
-nav  {
-    background-color:#087d2f;
-    padding: 1px ;
-    
+nav {
+    background-color: #087d2f;
+    padding: 1px;
+    position: relative; /* Para posicionar el botón de hamburguesa */
 }
 
 nav ul {
-    
     list-style: none;
     display: flex;
     gap: 20px;
@@ -45,9 +45,22 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Estilo para el botón de hamburguesa */
+.hamburger {
+    display: none; /* Ocultar por defecto */
+    font-size: 30px; /* Tamaño del icono */
+    color: white; /* Color del icono */
+    cursor: pointer; /* Cambiar cursor al pasar sobre el icono */
+}
+
+
+
+
 .contact-info {
     text-align: right;
      padding: 0px 0px 10px 0px;
+      margin-bottom: 10px;
+
 }
 
 .contact-info p {
@@ -58,6 +71,20 @@ nav ul li a {
     color: white;
     text-decoration: none;
     display: block;
+}
+
+.cart-button {
+    
+    margin-top: 10px;
+   
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    text-decoration: none; /* Sin subrayado en el texto */
+}
+
+.cart-icon {
+    width: 60px; /* Ancho del ícono */
+    height: auto; /* Altura automática para mantener la proporción */
 }
 
 .hero {
@@ -166,6 +193,53 @@ footer {
     padding: 20px 0;
 }
 
+.product-itemm {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    height: 150px; /* Altura fija */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Espacio entre los elementos */
+}
+
+
+
+.product-itemm img {
+    width: 100%;
+    max-height: 150px; /* Altura máxima */
+    object-fit: contain; /* Ajusta sin distorsionar */
+}
+
+.product-itemm h3 {
+    color: black;
+}
+
+.product-itemm a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #eeeeee;
+    color: #333333;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.product-itemm p {
+    margin-top: auto; /* Empuja el precio hacia abajo */
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+.product-itemm a:hover {
+    background-color: #a3a2a2;
+}
+
 .footer-container {
     display: flex;
     justify-content: space-around;
@@ -223,45 +297,83 @@ footer {
 }
 
 
-@media (max-width: 750px) {
+@media (max-width: 760px) {
+
+    ..logo-container {
+    display: flex; /* Usar flexbox para centrar */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+.logo-container img {
+    display: block; /* Asegurarse de que la imagen se comporte como un bloque */
+    margin: auto; /* Margen automático para centrar */
+}
+
     
-     .borde {
-        padding-left :10px ;
-        padding-right :10px ;
-     }
-    
-     header {
-        flex-direction : column ; /* Cambia la dirección del flex a columna */
-        align-items : flex-start ; /* Alinea los elementos al inicio */
-        padding :30px ; /* Reduce el padding */
-     }
 
-     nav ul {
-        flex-direction : column ; /* Cambia la dirección del menú a columna */
-        gap :10px ; /* Reduce el espacio entre los elementos */
-     }
 
-     nav ul li {
-        text-align : center ; /* Centra los enlaces del menú */
-     }
+    .borde {
+        padding-left: 10px;
+        padding-right: 10px;
+        align-items: center;
 
-     .contact-info {
-        text-align : center ; /* Centra la información de contacto */
-        padding :10px ; /* Ajusta el padding */
-     }
+    }
 
-     .product-list {
-        flex-direction : column ; /* Cambia la dirección de la lista de productos a columna */
-        align-items : center ; /* Centra los productos */
-     }
+    header {
 
-     .product-item {
-        width :90% ; /* Aumenta el ancho de los productos en móviles */
-        margin-bottom :20px ; /* Agrega margen inferior entre productos */
-     }
+        flex-direction: column; /* Cambia la dirección del flex a columna */
+        align-items: center; /* Alinea los elementos al inicio */
+        padding: 30px; /* Reduce el padding */
+    }
 
-     footer .footer-container {
-        flex-direction : column ; /* Cambia la dirección del footer a columna */
-        align-items : center ; /* Centra los elementos del footer */
-     }
+    nav ul {
+        display: none; /* Ocultar el menú por defecto */
+        flex-direction: column; /* Cambiar dirección a columna */
+        gap: 10px; /* Espacio entre elementos */
+        position: absolute; /* Posicionar el menú */
+        top: 50px; /* Ajustar la posición vertical */
+        right: 0; /* Alinear a la derecha */
+        background-color: #087d2f; /* Fondo del menú desplegable */
+        width: 100%; /* Ancho completo */
+        transition: background-color 0.3s ease; /* Transición suave */
+    }
+
+    nav ul:hover {
+         background-color: #065e2b;
+    }
+
+    .hamburger {
+        display: block; /* Mostrar el botón de hamburguesa en pantallas pequeñas */
+        
+        right: 20px; /* Espaciado desde la derecha */
+        top: 10px; /* Espaciado desde la parte superior */
+        transition: background-color 0.3s ease;
+
+    }
+
+    .hamburger:hover {
+        background-color: #065e2b;
+
+    }
+
+    .contact-info {
+        text-align: center; /* Centra la información de contacto */
+        padding: 10px; /* Ajusta el padding */
+    }
+
+    .product-list {
+        flex-direction: column; /* Cambia la dirección de la lista de productos a columna */
+        align-items: center; /* Centra los productos */
+    }
+
+    .product-item {
+        width: 90%; /* Aumenta el ancho de los productos en móviles */
+        margin-bottom: 20px; /* Agrega margen inferior entre productos */
+    }
+
+    footer .footer-container {
+        flex-direction: column; /* Cambia la dirección del footer a columna */
+        align-items: center; /* Centra los elementos del footer */
+    }
 }

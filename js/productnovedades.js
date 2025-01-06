@@ -3,13 +3,14 @@ const productListNovedades = document.getElementById('product-listrenovedades');
 
 // Ejemplo de productos novedades (puedes usar los mismos o diferentes)
 const productsNovedades = [
-    { name: 'ANTRIFORMINT FM ®', imageSrc: 'img/product/reme1.png' },
-    { name: 'ANTRIBAM 4G ®', imageSrc: 'img/product/atriban.png' },
-    { name: 'ASCEND', imageSrc: 'img/product/ascend.png' },
-    { name: 'ENROFLOXACINA 10% ®', imageSrc: 'img/product/enrofloxasina.png' },
-    { name: 'FLUXIPEN ®', imageSrc: 'img/product/fluxipen.png' },
-    { name: 'RESANIQ ®', imageSrc: 'img/product/RESANIQ.png' }
-];
+    { name: 'SONENIX 150®', imageSrc: 'img/product-novedades/sonenix.png' },
+    { name: 'ENOMETROL®', imageSrc: 'img/product-novedades/Enometrol.png' },
+    { name: 'AMOXIGEN', imageSrc: 'img/product-novedades/amoxigen.png' },
+    { name: 'OXITETRACICLINA AL 5%', imageSrc: 'img/product-novedades/OXITETRACICLINA.png' },
+    { name: 'FLORFENICOL L.A.', imageSrc: 'img/product-novedades/FLORFENICOL.png' },
+    { name: 'SULFACET', imageSrc: 'img/product-novedades/SULFACET.png' }
+]
+;
 
 // Agregar cada producto al DOM
 productsNovedades.forEach(product => {
