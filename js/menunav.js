@@ -19,7 +19,7 @@ document.addEventListener('click', function(event) {
 
     // Verificar si el clic fue fuera del menú y del botón de hamburguesa
     if (!navList.contains(event.target) && !hamburger.contains(event.target)) {
-        navList.style.display = 'none'; // Ocultar el menú
+        navList.style.display = ''; // Ocultar el menú
     }
 });
 

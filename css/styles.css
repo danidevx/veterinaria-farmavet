@@ -10,6 +10,7 @@ body {
 
     padding: 0px 150px;
 
+
 }
 
 header {
@@ -32,7 +33,7 @@ header {
 
 nav {
     background-color: #087d2f;
-    padding: 1px;
+    padding: 30px;
     position: relative; /* Para posicionar el botón de hamburguesa */
     border-radius: 10px;
 }
@@ -54,8 +55,14 @@ nav ul li a {
 /* Estilo para el botón de hamburguesa */
 .hamburger {
     display: none; /* Ocultar por defecto */
+     font-size: 30px; /* Tamaño del icono */
+    color: white; /* Color del icono */
+    cursor: pointer; /* Cambiar cursor al pasar sobre el icono */
+    border-radius: 10px;
    
 }
+
+
 
 
 
@@ -97,15 +104,7 @@ nav ul li a {
     text-align: center;
 }
 
-/*.hero-content h1 {
-    font-size: 3em;
-    color: #4CAF50;
-}
 
-.hero-content p {
-    font-size: 1.5em;
-    color: #333;
-}*/
 
 .hero-content img {
     max-width: 100%;
@@ -338,6 +337,11 @@ footer {
         padding: 30px; /* Reduce el padding */
     }
 
+    nav  {
+
+        padding: 0px;
+    }
+
     nav ul {
         display: none; /* Ocultar el menú por defecto */
         flex-direction: column; /* Cambiar dirección a columna */
@@ -373,6 +377,9 @@ footer {
 
 
     }
+
+
+
 
     .contact-info {
         text-align: center; /* Centra la información de contacto */
