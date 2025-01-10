@@ -6,6 +6,7 @@
     <title>Farvavet grandes</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/calculator.css">
 </head>
 <body>
 
@@ -15,8 +16,6 @@
                 <img src="img/logo.png" alt="Medivet Logo">
             </div>
             <div class="contact-info">
-
-                <!-- <h1>hola que tal</h1> -->
 
                 <p>Comunícate con nosotros vía WhatsApp</p>
                 <a href="https://wa.me/04120588764" target="_blank">(0412) 0588764</a>
@@ -72,7 +71,13 @@
                     <img src="img/portadaperro.png" alt="Dermipel Zoo">
                 </div>
             </section>
+
+
         </main>
+
+    
+
+
 
         <section class="recommended">
             <h2>Recomendamos</h2>
@@ -84,12 +89,23 @@
             <div class="product-list" id="product-listrenovedades"></div>
         </section>
 
+        <div class="calculator">
+          <input type="number" id="dosisTerapeutica2" placeholder="Ingrese la dosis terapéutica">
+          <input type="number" id="pesoVivo2" placeholder="Ingrese el peso vivo">
+          <input type="number" id="concentracionProducto2" placeholder="Ingrese la concentración de producto">
+          <button class="buton" onclick="calcularDosis(2)">Calcular</button>
+           <p id="resultado2"></p>
+        </div>
+
         <section class="new-arrivals">
             <h2>Categorias</h2>
             <div class="product-list" id="listCategorias"></div>
 
 
         </section>
+
+
+
     </div>
 
 
@@ -102,6 +118,7 @@
 <script src="js/productnovedades.js"></script>
 <script src="js/categorias.js"></script>
 <script src="js/menunav.js"></script>
+<script src="js/calculadora/calculator.js"></script>
 
     <footer>
         <div class="footer-container">

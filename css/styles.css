@@ -1,5 +1,7 @@
+
+
 body {
-    margin: 0;
+    margin: 0px;
     
     font-family: Georgia, serif;
 }
@@ -32,12 +34,16 @@ nav {
     background-color: #087d2f;
     padding: 1px;
     position: relative; /* Para posicionar el botón de hamburguesa */
+    border-radius: 10px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    padding: 10px;
+    gap: 30px;
+
+
 }
 
 nav ul li a {
@@ -48,9 +54,7 @@ nav ul li a {
 /* Estilo para el botón de hamburguesa */
 .hamburger {
     display: none; /* Ocultar por defecto */
-    font-size: 30px; /* Tamaño del icono */
-    color: white; /* Color del icono */
-    cursor: pointer; /* Cambiar cursor al pasar sobre el icono */
+   
 }
 
 
@@ -106,6 +110,7 @@ nav ul li a {
 .hero-content img {
     max-width: 100%;
     height: auto;
+    border-radius: 20px;
 }
 
 
@@ -118,13 +123,15 @@ nav ul li a {
 
 .recommended, .new-arrivals {
     padding: 20px;
-    background-color: #f8f9fa;
+    background-color: #f2f3f3;
+    border-radius: 20px;
+
 }
 
 .recommended h2, .new-arrivals h2 {
     text-align: center;
     color: black;
-    padding: 50px;
+    padding: auto;
 }
 
 .product-list {
@@ -137,7 +144,7 @@ nav ul li a {
 .product-item {
     text-align: center;
     background-color: white;
-    padding: 20px;
+    padding: 10px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 150px;
@@ -145,6 +152,7 @@ nav ul li a {
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Espacio entre los elementos */
+
 }
 
 
@@ -212,6 +220,7 @@ footer {
     width: 100%;
     max-height: 150px; /* Altura máxima */
     object-fit: contain; /* Ajusta sin distorsionar */
+    border-radius: 10px;
 }
 
 .product-itemm h3 {
@@ -297,6 +306,8 @@ footer {
 }
 
 
+
+
 @media (max-width: 760px) {
 
     ..logo-container {
@@ -330,30 +341,36 @@ footer {
     nav ul {
         display: none; /* Ocultar el menú por defecto */
         flex-direction: column; /* Cambiar dirección a columna */
-        gap: 10px; /* Espacio entre elementos */
+        gap: 20px; /* Espacio entre elementos */
         position: absolute; /* Posicionar el menú */
-        top: 50px; /* Ajustar la posición vertical */
-        right: 0; /* Alinear a la derecha */
+        
+        
         background-color: #087d2f; /* Fondo del menú desplegable */
-        width: 100%; /* Ancho completo */
+        
         transition: background-color 0.3s ease; /* Transición suave */
+        padding: 30px;
+        border-radius: 10px;
+
     }
 
     nav ul:hover {
          background-color: #065e2b;
+
     }
 
     .hamburger {
         display: block; /* Mostrar el botón de hamburguesa en pantallas pequeñas */
         
-        right: 20px; /* Espaciado desde la derecha */
-        top: 10px; /* Espaciado desde la parte superior */
+       padding: 10px;
         transition: background-color 0.3s ease;
+        border-radius: 10px;
+        
 
     }
 
     .hamburger:hover {
         background-color: #065e2b;
+
 
     }
 
